@@ -175,7 +175,7 @@ for runList in CombinedList:
 			runnerSlice = runnerName[:sliceIndex]
 			printLine += runnerSlice
 			print(printLine)
-			readme.write(printLine + '\n')
+			readme.write("* " + printLine + '\n')
 		except:
 			test = 0
 		
