@@ -7,6 +7,7 @@
 
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from datetime import datetime
 import os
 
 driver = webdriver.Chrome()
@@ -153,6 +154,8 @@ counter = 0
 readme = open('./README.md', 'w')
 readme.write('# PMD Single Game Categories World Records\n\n')
 
+updateTime = datetime.utcnow()
+readme.write("Last updated: " + str(updateTime) + '\n\n')
 
 for runList in CombinedList:
 	#print game name
