@@ -1,3 +1,4 @@
+#!
 # srcscrape.py
 # Obtains WR times and runner names from sr.c
 # BETA 1.0: Formats information as README
@@ -6,6 +7,7 @@
 
 from bs4 import BeautifulSoup
 from selenium import webdriver
+import os
 
 driver = webdriver.Chrome()
 
@@ -148,10 +150,14 @@ CombinedList = [RTList, TDList, SkyList, WiiList, GatesList, SuperList, RTDXList
 GameNames = ["Red/Blue Rescue Team", "Explorers of Time/Darkness", "Explorers of Sky", "WiiWare", "Gates to Infinity", "Super Mystery Dungeon", "Rescue Team DX"]
 
 counter = 0
+readme = open('./README.md', 'w')
+readme.write('# PMD Single Game Categories World Records\n\n')
+
 
 for runList in CombinedList:
 	#print game name
 	print(GameNames[counter])
+	readme.write('## ' + GameNames[counter] + '\n')
 	for run in runList:
 		# print run category
 		printLine = run[0] + ': '
@@ -169,12 +175,15 @@ for runList in CombinedList:
 			runnerSlice = runnerName[:sliceIndex]
 			printLine += runnerSlice
 			print(printLine)
+			readme.write(printLine + '\n')
 		except:
 			test = 0
 		
 		
 	print('')
+	readme.write('\n')
 	counter += 1
 
+readme.close()
 driver.close()
 # TODO: write output to README with markdown
