@@ -1,6 +1,6 @@
 # PMD Single Game Categories World Records
 
-Last updated: 2020-05-06 20:47:14.396714
+Last updated: 2020-05-07 00:10:02.567548
 
 ## Red/Blue Rescue Team
 * Any% ENG Unrestricted: 1h 53m 15s by Wh0misDS
@@ -54,7 +54,7 @@ Last updated: 2020-05-06 20:47:14.396714
 * 100% with WM: 33h 53m 46s by MozzarellaCheez
 
 ## Rescue Team DX
-* Any% ENG with WM: 3h 04m 12s by Liversticks
+* Any% ENG with WM: 2h 49m 14s by Wh0misDS
 * Any% ENG no WM: 3h 06m 10s by Wh0misDS
 * Any% JPN no WM: 3h 40m 46s by Shiguma
 
