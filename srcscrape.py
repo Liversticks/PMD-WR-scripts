@@ -151,16 +151,18 @@ CombinedList = [RTList, TDList, SkyList, WiiList, GatesList, SuperList, RTDXList
 GameNames = ["Red/Blue Rescue Team", "Explorers of Time/Darkness", "Explorers of Sky", "WiiWare", "Gates to Infinity", "Super Mystery Dungeon", "Rescue Team DX"]
 
 counter = 0
-readme = open('./README.md', 'w')
-readme.write('# PMD Single Game Categories World Records\n\n')
+readme = open('./index.html', 'w')
+readme.write('<html>')
+readme.write('<body>')
+readme.write('<h1>PMD Single Game Categories World Records</h1>')
 
 updateTime = datetime.utcnow()
-readme.write("Last updated: " + str(updateTime) + '\n\n')
+readme.write("<p>Last updated: " + str(updateTime) + '</p>')
 
 for runList in CombinedList:
 	#print game name
 	print(GameNames[counter])
-	readme.write('## ' + GameNames[counter] + '\n')
+	readme.write('<h2>' + GameNames[counter] + '</h2>')
 	for run in runList:
 		# print run category
 		printLine = run[0] + ': '
@@ -178,14 +180,17 @@ for runList in CombinedList:
 			runnerSlice = runnerName[:sliceIndex]
 			printLine += runnerSlice
 			print(printLine)
-			readme.write("* " + printLine + '\n')
+			readme.write("<p>" + printLine + '</p>')
 		except:
 			test = 0
 		
 		
-	print('')
-	readme.write('\n')
+	#print('')
+	#readme.write('\n')
 	counter += 1
+
+readme.write('</body>')
+readme.write('</html>')
 
 readme.close()
 driver.close()

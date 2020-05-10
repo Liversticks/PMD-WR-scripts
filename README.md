@@ -1,8 +1,16 @@
-# PMD Single Game Categories World Records
+# PMD WR Tracker
+
+This uses web scraping (webdriver + Beautiful Soup) to get the WR times and runner name from the speedrun.com leaderboards.
+
+## Changelog
+* May 9: Convert output from markdown (see below for what it looked like) to HTML
+* April 24: Initial release
+
+## PMD Single Game Categories World Records
 
 Last updated: 2020-05-07 00:10:02.567548
 
-## Red/Blue Rescue Team
+### Red/Blue Rescue Team
 * Any% ENG Unrestricted: 1h 53m 15s by Wh0misDS
 * Any% ENG No WM: 1h 59m 37s by Wh0misDS
 * Any% ENG No WM, No QS: 2h 29m 16s by Wh0misDS
@@ -17,7 +25,7 @@ Last updated: 2020-05-07 00:10:02.567548
 * Low% Unrestricted: 2h 32m 35s by Wh0misDS
 * All Dungeons No WM, No QS: 11h 56m 25s by Wh0misDS
 
-## Explorers of Time/Darkness
+### Explorers of Time/Darkness
 * Any% ENG with WM: 5h 30m 53s by MozzarellaCheez
 * Any% ENG no WM: 5h 33m 55s by Wh0misDS
 * Any% JPN no WM: 4h 58m 24s by MozzarellaCheez
@@ -26,7 +34,7 @@ Last updated: 2020-05-07 00:10:02.567548
 * Recruit Em All Unlimited WM: 41h 03m 58s by Crrool
 * Recruit Em All Minimum WM: 62h 22m 59s by Crrool
 
-## Explorers of Sky
+### Explorers of Sky
 * Any% ENG with WM: 4h 59m 45s by Wh0misDS
 * Any% ENG no WM: 5h 19m 27s by Wh0misDS
 * Any% JPN no WM: 4h 51m 54s by Uranos
@@ -39,21 +47,21 @@ Last updated: 2020-05-07 00:10:02.567548
 * All Icons no WM: 17h 34m 28s by AnthemOfTheWorld
 * All Special Episodes: 3h 02m 41s by Wh0misDS
 
-## WiiWare
+### WiiWare
 
-## Gates to Infinity
+### Gates to Infinity
 * Any% ENG with WM: 7h 40m 43s by Wh0misDS
 * Any% ENG no WM: 8h 07m 10s by Wh0misDS
 * Any% JPN no WM: 7h 25m 14s by itotaka1031
 * Recruit Em All with WM: 28h 54m 38s by Wh0misDS
 
-## Super Mystery Dungeon
+### Super Mystery Dungeon
 * Any% ENG with WM: 5h 43m 55s by MozzarellaCheez
 * Any% ENG no WM: 6h 07m 17s by ColeQuil
 * Any% JPN no WM: 6h 51m 17s by Liversticks
 * 100% with WM: 33h 53m 46s by MozzarellaCheez
 
-## Rescue Team DX
+### Rescue Team DX
 * Any% ENG with WM: 2h 49m 14s by Wh0misDS
 * Any% ENG no WM: 3h 06m 10s by Wh0misDS
 * Any% JPN no WM: 3h 40m 46s by Shiguma
