@@ -1,7 +1,7 @@
 #!
 # srcscrape.py
 # Obtains WR times and runner names from sr.c
-# BETA 1.0: Formats information as README
+# BETA 2.0: Formats information as plain HTML
 
 # Oliver X. (Liversticks)
 
@@ -151,18 +151,19 @@ CombinedList = [RTList, TDList, SkyList, WiiList, GatesList, SuperList, RTDXList
 GameNames = ["Red/Blue Rescue Team", "Explorers of Time/Darkness", "Explorers of Sky", "WiiWare", "Gates to Infinity", "Super Mystery Dungeon", "Rescue Team DX"]
 
 counter = 0
-readme = open('./index.html', 'w')
-readme.write('<html>')
-readme.write('<body>')
-readme.write('<h1>PMD Single Game Categories World Records</h1>')
+webPage = open('./index.html', 'w')
+webPage.write('<html>\n')
+webPage.write('<head>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">\n</head>\n')
+webPage.write('<body>\n')
+webPage.write('<h1>PMD Single Game Categories World Records</h1>\n')
 
 updateTime = datetime.utcnow()
-readme.write("<p>Last updated: " + str(updateTime) + '</p>')
+webPage.write("<p>Last updated: " + str(updateTime) + '</p>\n')
 
 for runList in CombinedList:
 	#print game name
 	print(GameNames[counter])
-	readme.write('<h2>' + GameNames[counter] + '</h2>')
+	webPage.write('<h2>' + GameNames[counter] + '</h2>\n')
 	for run in runList:
 		# print run category
 		printLine = run[0] + ': '
@@ -180,18 +181,18 @@ for runList in CombinedList:
 			runnerSlice = runnerName[:sliceIndex]
 			printLine += runnerSlice
 			print(printLine)
-			readme.write("<p>" + printLine + '</p>')
+			webPage.write("<p>" + printLine + '</p>\n')
 		except:
 			test = 0
 		
 		
 	#print('')
-	#readme.write('\n')
+	#webPage.write('\n')
 	counter += 1
 
-readme.write('</body>')
-readme.write('</html>')
+webPage.write('</body>\n')
+webPage.write('</html>\n')
 
-readme.close()
+webPage.close()
 driver.close()
-# TODO: write output to README with markdown
+
