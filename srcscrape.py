@@ -140,13 +140,13 @@ rtdxENGiconsWM = 'https://www.speedrun.com/ajax_leaderboard.php?variable40519=13
 # All Icons, no WM
 rtdxENGiconsNW = 'https://www.speedrun.com/ajax_leaderboard.php?variable40519=138362&game=pmddx&verified=1&category=105888&platform=&variable40520=&emulator=0&video=&obsolete=&date='
 
-RTList = [['Any% ENG Unrestricted', rtENGanyUR], ['Any% ENG No WM', rtENGanyNW], ['Any% ENG No WM, No QS', rtENGanySS], ['Any% JPN Unrestricted', rtJPNanyUR], ['Any% JPN No WM', rtJPNanyNW], ['Any% JPN No WM, No QS', rtJPNanySS], ['All Icons Unrestricted', rtENGiconsUR], ['All Icons No WM', rtENGiconsNW], ['All Icons No WM, No QS', rtENGiconsSS], ['Recruit Em All Unrestricted', rtENGreaUR], ['Recruit Em All No WM', rtENGreaNW], ['Recruit Em All No WM, No QS', rtENGreaSS], ['Low% Unrestricted', rtENGlowUR], ['All Dungeons No WM, No QS', rtENGadSS]]
-TDList = [['Any% ENG with WM', tdENGanyWM], ['Any% ENG no WM', tdENGanyNW], ['Any% JPN with WM', tdJPNanyWM], ['Any% JPN no WM', tdJPNanyNW], ['Beat Darkrai with WM', tdENGdarkWM], ['Beat Darkrai no WM', tdENGdarkNW], ['Recruit Em All Unlimited WM', tdENGreaUW], ['Recruit Em All Minimum WM', tdENGreaMW]]
-SkyList = [['Any% ENG with WM', skyENGanyWM], ['Any% ENG no WM', skyENGanyNW], ['Any% JPN with WM', skyJPNanyWM], ['Any% JPN no WM', skyJPNanyNW], ['Beat Darkrai ENG with WM', skyENGdarkWM], ['Beat Darkrai ENG no WM', skyENGdarkNW], ['Beat Darkrai JPN with WM', skyJPNdarkWM], ['Beat Darkrai JPN no WM', skyJPNdarkNW], ['Recruit Em All with WM', skyENGreaWM], ['Recruit Em All no WM', skyENGreaNW], ['All Icons with WM', skyENGiconsWM], ['All Icons no WM', skyENGiconsNW], ['All Special Episodes', skyENGase]]
-WiiList = [['Any%', wiiJPNany]]
-GatesList = [['Any% ENG with WM', gtiENGanyWM], ['Any% ENG no WM', gtiENGanyNW], ['Any% JPN with WM', gtiJPNanyWM], ['Any% JPN no WM', gtiJPNanyNW], ['Recruit Em All with WM', gtiENGreaWM], ['Recruit Em All no WM', gtiENGreaNW]]
-SuperList = [['Any% ENG with WM', smdENGanyWM], ['Any% ENG no WM', smdENGanyNW], ['Any% JPN with WM', smdJPNanyWM], ['Any% JPN no WM', smdJPNanyNW], ['100% with WM', smdENG100WM]]
-RTDXList = [['Any% ENG with WM', rtdxENGanyWM], ['Any% ENG no WM', rtdxENGanyNW], ['Any% JPN with WM', rtdxJPNanyWM], ['Any% JPN no WM', rtdxJPNanyNW], ['All Icons with WM', rtdxENGiconsWM], ['All Icons no WM', rtdxENGiconsNW]]
+RTList = [['Any% ENG', 'Unrestricted', rtENGanyUR], ['Any% ENG', 'No WM', rtENGanyNW], ['Any% ENG', 'No WM, No QS', rtENGanySS], ['Any% JPN', 'Unrestricted', rtJPNanyUR], ['Any% JPN', 'No WM', rtJPNanyNW], ['Any% JPN', 'No WM, No QS', rtJPNanySS], ['All Icons', 'Unrestricted', rtENGiconsUR], ['All Icons', 'No WM', rtENGiconsNW], ['All Icons No WM, No QS', rtENGiconsSS], ['Recruit Em All', 'Unrestricted', rtENGreaUR], ['Recruit Em All', 'No WM', rtENGreaNW], ['Recruit Em All', 'No WM, No QS', rtENGreaSS], ['Low%', 'Unrestricted', rtENGlowUR], ['All Dungeons', 'No WM, No QS', rtENGadSS]]
+TDList = [['Any% ENG', 'with WM', tdENGanyWM], ['Any% ENG', 'no WM', tdENGanyNW], ['Any% JPN', 'with WM', tdJPNanyWM], ['Any% JPN', 'no WM', tdJPNanyNW], ['Beat Darkrai', 'with WM', tdENGdarkWM], ['Beat Darkrai', 'no WM', tdENGdarkNW], ['Recruit Em All', 'Unlimited WM', tdENGreaUW], ['Recruit Em All', 'Minimum WM', tdENGreaMW]]
+SkyList = [['Any% ENG', 'with WM', skyENGanyWM], ['Any% ENG', 'no WM', skyENGanyNW], ['Any% JPN', 'with WM', skyJPNanyWM], ['Any% JPN', 'no WM', skyJPNanyNW], ['Beat Darkrai ENG', 'with WM', skyENGdarkWM], ['Beat Darkrai ENG', 'no WM', skyENGdarkNW], ['Beat Darkrai JPN', 'with WM', skyJPNdarkWM], ['Beat Darkrai JPN', 'no WM', skyJPNdarkNW], ['Recruit Em All', 'with WM', skyENGreaWM], ['Recruit Em All', 'no WM', skyENGreaNW], ['All Icons', 'with WM', skyENGiconsWM], ['All Icons', 'no WM', skyENGiconsNW], ['All Special Episodes', '', skyENGase]]
+WiiList = [['Any%', '', wiiJPNany]]
+GatesList = [['Any% ENG', 'with WM', gtiENGanyWM], ['Any% ENG', 'no WM', gtiENGanyNW], ['Any% JPN', 'with WM', gtiJPNanyWM], ['Any% JPN', 'no WM', gtiJPNanyNW], ['Recruit Em All', 'with WM', gtiENGreaWM], ['Recruit Em All', 'no WM', gtiENGreaNW]]
+SuperList = [['Any% ENG', 'with WM', smdENGanyWM], ['Any% ENG', 'no WM', smdENGanyNW], ['Any% JPN', 'with WM', smdJPNanyWM], ['Any% JPN', 'no WM', smdJPNanyNW], ['100%', 'with WM', smdENG100WM]]
+RTDXList = [['Any% ENG', 'with WM', rtdxENGanyWM], ['Any% ENG', 'no WM', rtdxENGanyNW], ['Any% JPN', 'with WM', rtdxJPNanyWM], ['Any% JPN', 'no WM', rtdxJPNanyNW], ['All Icons', 'with WM', rtdxENGiconsWM], ['All Icons', 'no WM', rtdxENGiconsNW]]
 CombinedList = [RTList, TDList, SkyList, WiiList, GatesList, SuperList, RTDXList]
 GameNames = ["Red/Blue Rescue Team", "Explorers of Time/Darkness", "Explorers of Sky", "WiiWare", "Gates to Infinity", "Super Mystery Dungeon", "Rescue Team DX"]
 
@@ -166,9 +166,9 @@ for runList in CombinedList:
 	webPage.write('<h2>' + GameNames[counter] + '</h2>\n')
 	for run in runList:
 		# print run category
-		printLine = run[0] + ': '
+		printLine = run[0] + " " + run[1] + ': '
 		# access run at url
-		driver.get(run[1])
+		driver.get(run[2])
 		
 		soup = BeautifulSoup(driver.page_source, "html.parser")
 		# print run time
