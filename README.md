@@ -3,6 +3,7 @@
 This uses web scraping (webdriver + Beautiful Soup) to get the WR times and runner name from the speedrun.com leaderboards.
 
 ## Changelog
+* May 11: Convert srcscrape.py to output to database instead of HTML file
 * May 9: Convert output from markdown (see below for what it looked like) to HTML
 * April 24: Initial release
 
