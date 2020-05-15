@@ -1,0 +1,31 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>PMD World Record Tracker</h1>
+  <p>This website was developed by <em>Liversticks</em>!</p>
+  <h2>Dynamic content</h2>
+  <p>Number of categories tracked: {{ num_categories }}</p>
+  <p>Number of valid categories that contain a time: {{ num_valid_categories }}</p>
+  
+  {% if list_of_games %}
+	{% for item in list_of_games %}
+		<h2>{{item}}</h2>
+	{% endfor %}
+  {% else %}
+	<p>List of games not working.</p>
+  {% endif %}
+  
+  
+  {% if valid_runs %}
+	{% for run in valid_runs %}
+		<ul>
+			<li>{{ run.category }} {{ run.ruleset }} in {{ run.runTime }} by <a href="https://speedrun.com/user/{{run.playerName}}">{{ run.playerName}}</a></li>
+		</ul>
+	{% endfor %}
+  {% else %}
+	<p>Hey! The individual game categories aren't showing up.</p>
+  {% endif %}
+  
+
+  
+{% endblock %}
