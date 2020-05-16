@@ -16,16 +16,19 @@ def index(request):
 	myDB.row_factory = lambda cursor, row: row[0]
 	list_of_games = myDB.execute("SELECT DISTINCT game FROM records_run").fetchall()
 	myDB.close()
-		
-	# query database to get data
-	valid_runs = Run.objects.exclude(playerName="")
 	
-	# dictionary linking keys to values derived above
+	valid_runs = Run.objects.exclude(playerName="")
+	all_runs = Run.objects.all()
+	
 	context = {
 		'num_categories': num_categories,
 		'num_valid_categories': num_valid_categories,
 		'list_of_games': list_of_games,
-		'valid_runs': valid_runs
+		'all_runs': all_runs
+		
 	}
+		
+	print(context)
+	
 	
 	return render(request, 'index.html', context=context)
