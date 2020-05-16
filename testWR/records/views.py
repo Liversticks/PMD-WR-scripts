@@ -27,8 +27,5 @@ def index(request):
 		'all_runs': all_runs
 		
 	}
-		
-	print(context)
-	
 	
 	return render(request, 'index.html', context=context)

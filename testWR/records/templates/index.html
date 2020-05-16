@@ -13,33 +13,31 @@
   {% if list_of_games %}
 	{% for game_title in list_of_games %}
 		<h2 class="text-center">{{game_title}}</h2>
-		<div class="container">
-		<div class="row justify-content-center">
-			<div class="col"><em>Category</em></div>
-			<div class="col"><em>Ruleset</em></div>
-			<div class="col"><em>Time</em></div>
-			<div class="col"><em>Runner</em></div>
-		</div>
+		<table class="table table-striped table-bordered">
+			<thead><tr>
+				<th scope="col"><em>Category</em></th>
+				<th scope="col"><em>Ruleset</em></th>
+				<th scope="col"><em>Time</em></th>
+				<th scope="col"><em>Runner</em></th>
+			</tr></thead>
+		<tbody>
 		{% for run in all_runs %}
-			<!--Match title and check that run is valid-->
-			
+			<!--Match title and check that run is valid (non-empty)-->
 			{% if run.game == game_title %}
-				
 				{% if run.runTime != "" %}
-					<div class="row justify-content-center">
-						<div class="col">{{ run.category }}</div>
-						<div class="col">{{ run.ruleset }}</div>
-						<div class="col">{{ run.runTime }}</div>
-						<div class="col">
+					<tr>
+						<td>{{ run.category }}</td>
+						<td>{{ run.ruleset }}</td>
+						<td>{{ run.runTime }}</td>
+						<td>
 							<a href="https://speedrun.com/user/{{run.playerName}}">{{ run.playerName}}</a>
-						</div>
-					</div>
+						</td>
+					</tr>
 				{% endif %}
 			{% endif %}
-			
+		</tbody>	
 		{% endfor %}
-		
-		</div>
+		</table>
 		<br>
 	{% endfor %}
   {% else %}
