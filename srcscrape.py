@@ -139,15 +139,23 @@ rtdxENGiconsWM = 'https://www.speedrun.com/ajax_leaderboard.php?variable40519=13
 # All Icons, No WM
 rtdxENGiconsNW = 'https://www.speedrun.com/ajax_leaderboard.php?variable40519=138362&game=pmddx&verified=1&category=105888&platform=&variable40520=&emulator=0&video=&obsolete=&date='
 
-RTList = [['Any% ENG', 'Unrestricted', rtENGanyUR], ['Any% ENG', 'No WM', rtENGanyNW], ['Any% ENG', 'No WM, No QS', rtENGanySS], ['Any% JPN', 'Unrestricted', rtJPNanyUR], ['Any% JPN', 'No WM', rtJPNanyNW], ['Any% JPN', 'No WM, No QS', rtJPNanySS], ['All Icons', 'Unrestricted', rtENGiconsUR], ['All Icons', 'No WM', rtENGiconsNW], ['All Icons', 'No WM, No QS', rtENGiconsSS], ['Recruit Em All', 'Unrestricted', rtENGreaUR], ['Recruit Em All', 'No WM', rtENGreaNW], ['Recruit Em All', 'No WM, No QS', rtENGreaSS], ['Low%', 'Unrestricted', rtENGlowUR], ['All Dungeons', 'No WM, No QS', rtENGadSS]]
+# PMD Series Any% Unrestricted
+pmdseriesAnyUR = 'https://www.speedrun.com/ajax_leaderboard.php?game=multiplemysterydungeon&verified=1&category=52548&platform=&emulator=2&video=&obsolete=&date='
+# PMD Series Any% No WM No QS
+pmdseriesAnySS = 'https://www.speedrun.com/ajax_leaderboard.php?game=multiplemysterydungeon&verified=1&category=99524&platform=&emulator=2&video=&obsolete=&date='
+# PMD Series Recruit Em All Unrestricted
+pmdseriesREAUR = 'https://www.speedrun.com/ajax_leaderboard.php?game=multiplemysterydungeon&verified=1&category=104076&platform=&emulator=2&video=&obsolete=&date='
+
+RTList = [['Any% ENG', 'Unrestricted', rtENGanyUR], ['Any% ENG', 'No WM', rtENGanyNW], ['Any% ENG', 'No WM No QS', rtENGanySS], ['Any% JPN', 'Unrestricted', rtJPNanyUR], ['Any% JPN', 'No WM', rtJPNanyNW], ['Any% JPN', 'No WM No QS', rtJPNanySS], ['All Icons', 'Unrestricted', rtENGiconsUR], ['All Icons', 'No WM', rtENGiconsNW], ['All Icons', 'No WM No QS', rtENGiconsSS], ['Recruit Em All', 'Unrestricted', rtENGreaUR], ['Recruit Em All', 'No WM', rtENGreaNW], ['Recruit Em All', 'No WM No QS', rtENGreaSS], ['Low%', 'Unrestricted', rtENGlowUR], ['All Dungeons', 'No WM No QS', rtENGadSS]]
 TDList = [['Any% ENG', 'with WM', tdENGanyWM], ['Any% ENG', 'No WM', tdENGanyNW], ['Any% JPN', 'with WM', tdJPNanyWM], ['Any% JPN', 'No WM', tdJPNanyNW], ['Beat Darkrai', 'with WM', tdENGdarkWM], ['Beat Darkrai', 'No WM', tdENGdarkNW], ['Recruit Em All', 'Unlimited WM', tdENGreaUW], ['Recruit Em All', 'Minimum WM', tdENGreaMW]]
 SkyList = [['Any% ENG', 'with WM', skyENGanyWM], ['Any% ENG', 'No WM', skyENGanyNW], ['Any% JPN', 'with WM', skyJPNanyWM], ['Any% JPN', 'No WM', skyJPNanyNW], ['Beat Darkrai ENG', 'with WM', skyENGdarkWM], ['Beat Darkrai ENG', 'No WM', skyENGdarkNW], ['Beat Darkrai JPN', 'with WM', skyJPNdarkWM], ['Beat Darkrai JPN', 'No WM', skyJPNdarkNW], ['Recruit Em All', 'with WM', skyENGreaWM], ['Recruit Em All', 'No WM', skyENGreaNW], ['All Icons', 'with WM', skyENGiconsWM], ['All Icons', 'No WM', skyENGiconsNW], ['All Special Episodes', '', skyENGase]]
 WiiList = [['Any%', '', wiiJPNany]]
 GatesList = [['Any% ENG', 'with WM', gtiENGanyWM], ['Any% ENG', 'No WM', gtiENGanyNW], ['Any% JPN', 'with WM', gtiJPNanyWM], ['Any% JPN', 'No WM', gtiJPNanyNW], ['Recruit Em All', 'with WM', gtiENGreaWM], ['Recruit Em All', 'No WM', gtiENGreaNW]]
 SuperList = [['Any% ENG', 'with WM', smdENGanyWM], ['Any% ENG', 'No WM', smdENGanyNW], ['Any% JPN', 'with WM', smdJPNanyWM], ['Any% JPN', 'No WM', smdJPNanyNW], ['100%', 'with WM', smdENG100WM]]
 RTDXList = [['Any% ENG', 'with WM', rtdxENGanyWM], ['Any% ENG', 'No WM', rtdxENGanyNW], ['Any% JPN', 'with WM', rtdxJPNanyWM], ['Any% JPN', 'No WM', rtdxJPNanyNW], ['All Icons', 'with WM', rtdxENGiconsWM], ['All Icons', 'No WM', rtdxENGiconsNW]]
-CombinedList = [RTList, TDList, SkyList, WiiList, GatesList, SuperList, RTDXList]
-GameNames = ["Red/Blue Rescue Team", "Explorers of Time/Darkness", "Explorers of Sky", "WiiWare", "Gates to Infinity", "Super Mystery Dungeon", "Rescue Team DX"]
+SeriesList = [['PMD Series Any%', 'Unrestricted', pmdseriesAnyUR], ['PMD Series Any%', 'No WM No QS', pmdseriesAnySS], ['PMD Series Recruit Em All', 'Unrestricted', pmdseriesREAUR]]
+CombinedList = [RTList, TDList, SkyList, WiiList, GatesList, SuperList, RTDXList, SeriesList]
+GameNames = ["Red/Blue Rescue Team", "Explorers of Time/Darkness", "Explorers of Sky", "WiiWare", "Gates to Infinity", "Super Mystery Dungeon", "Rescue Team DX", "Multiple Mystery Dungeon Games"]
 
 driver = webdriver.Chrome()
 myDB = sqlite3.connect('./testWR/db.sqlite3')
@@ -171,7 +179,7 @@ for runList in CombinedList:
 			# slice names because sr.c stores the name twice
 			sliceIndex = int(len(runnerName)/2)
 			runnerSlice = runnerName[:sliceIndex]
-			print(runnerSlice + " " + runtime)
+			print(run[0] + " " + run[1] + " " + runnerSlice + " " + runtime)
 		except:
 			print("No data exists for this game/category/rule combination")
 	
